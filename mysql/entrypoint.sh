@@ -1,13 +1,10 @@
 #!/bin/bash
 
-if [ -f /tmp/mysql_root_password.txt ]; then
-    PASSWORD=$(cat /tmp/mysql_root_password.txt)
-    echo "Accessed Root password"
+if [ -n "$MYSQL_ROOT_PASSWORD" ]; then
+    echo "Using MYSQL_ROOT_PASSWORD from environment"
 else
-    echo "Password file not found"
+    echo "MYSQL_ROOT_PASSWORD not set!"
     exit 1
 fi
-# Making it as available in env
-export MYSQL_ROOT_PASSWORD=$PASSWORD
-rm -rf /tmp/mysql_root_password.txt
+
 exec /entrypoint.sh mysqld
