@@ -37,13 +37,8 @@ services:
     - catalogue
     - redis
   mysql:
-    image: mukhtarsheikh/mysql:v4
+    image: mukhtarsheikh/mysql:v5
     container_name: mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: roboshop@1
-      MYSQL_DATABASE: roboshop@1
-      MYSQL_USER: roboshop@1
-      MYSQL_PASSWORD: roboshop@1
     volumes:
     - mysql:/var/lib/mysql
   shipping:
