@@ -44,7 +44,7 @@ services:
     volumes:
     - mysql:/var/lib/mysql
   shipping:
-    image: mukhtarsheikh/shipping:v4
+    image: mukhtarsheikh/shipping:v3
     container_name: shipping
     depends_on:
     - mysql
