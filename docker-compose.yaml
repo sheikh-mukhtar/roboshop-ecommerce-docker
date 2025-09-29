@@ -37,7 +37,7 @@ services:
     - catalogue
     - redis
   mysql:
-    image: mukhtarsheikh/mysql:v3
+    image: mukhtarsheikh/mysql:v4
     container_name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
