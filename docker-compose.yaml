@@ -40,7 +40,7 @@ services:
     image: mukhtarsheikh/mysql:v3
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD=RoboShop@1
+      MYSQL_ROOT_PASSWORD: RoboShop@1
     volumes:
     - mysql:/var/lib/mysql
   shipping:
