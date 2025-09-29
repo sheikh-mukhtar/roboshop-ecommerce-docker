@@ -40,12 +40,10 @@ services:
     image: mukhtarsheikh/mysql:v4
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: roboshop
-      MYSQL_USER: robouser
-      MYSQL_PASSWORD: robopass
-    ports:
-      - "3306:3306"
+      MYSQL_ROOT_PASSWORD: roboshop@1
+      MYSQL_DATABASE: roboshop@1
+      MYSQL_USER: roboshop@1
+      MYSQL_PASSWORD: roboshop@1
     volumes:
     - mysql:/var/lib/mysql
   shipping:
