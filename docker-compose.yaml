@@ -37,7 +37,7 @@ services:
     - catalogue
     - redis
   mysql:
-    image: mukhtarsheikh/mysql:v5
+    image: mukhtarsheikh/mysql:v3
     container_name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: roboshop@1
